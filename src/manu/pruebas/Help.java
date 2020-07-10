@@ -1,16 +1,18 @@
 package manu.pruebas;
 
+import manu.pruebas.elastic.Elastic22;
+
 import java.util.Arrays;
 
 public class Help {
 
     public Help() {
-        this.run();
+        Help.run();
     }
 
     public static void main(final String[] args) {
         final Help kk22 = new Help();
-        kk22.run();
+        Help.run();
     }
 
     public class Pojo22 {
@@ -21,7 +23,7 @@ public class Help {
     }
 
 
-    public void f22(final int kk) {
+    public static void f22(final int kk) {
         String aux = "";
         String number = aux + kk;
         final char[] chars = new char[16 - number.length()];
@@ -31,7 +33,7 @@ public class Help {
         System.out.println(number);
     }
 
-    public void f23() {
+    public static void f23() {
         final String aaa = "3423-afefe";
         final int kk23 = aaa.indexOf("-");
 
@@ -42,8 +44,11 @@ public class Help {
 
     }
 
-    public void run() {
+    public static void run() {
         System.out.println(" ------------------ ");
+
+        final Elastic22 kk22 = new Elastic22();
+        kk22.run();
 
 
 //        int kk22 = 432;
@@ -191,12 +196,17 @@ Additional numbering included in 'Event Type' - attribute 390. The sequence numb
 1593085741041
 
 
+        System.out.println(" - ");
+
+
+        final String kk23 = "12345";
+
+
+        System.out.println(" - " + kk23.substring(0, kk23.length() - 1));
+
  */
 
-
         System.out.println(System.currentTimeMillis());
-
-
         System.out.println(" ------------------ ");
 
 
