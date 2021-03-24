@@ -1,0 +1,42 @@
+
+# esto es para que no de errores cuando un excell esta abierto
+~$*
+
+
+# el resto es standard :
+HELP.md
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**
+!**/src/test/**
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.gradle/
+/.nb-gradle/
+build/
+
+### VS Code ###
+.vscode/
+
+### eclipse ###
+/bin/
+
