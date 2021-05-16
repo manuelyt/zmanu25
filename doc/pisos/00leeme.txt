@@ -1,0 +1,22 @@
+
+
+
+este html me lo hice con el libre office
+
+
+
+
+aunque en el chrome se veia bien, en el office no, para que se vea bien en el office hay que poner saltos de linea
+depues es muy facil quitarlos con el notepad :
+
+
+
+
+\r\n</p>\r\n<p style="margin-bottom: 0cm; line-height: 100%"><br/>
+
+
+
+
+
+
+
