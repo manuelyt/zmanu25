@@ -1,0 +1,39 @@
+
+    if(window.config.detailWithSuggestionsToggle && window.config.hasToShowRecommendations) {
+        
+    var paths = [
+        '/react/detailWithSuggestions/dist/npm..pnpm.6c18dc3b24ad18c5d3cc.js','/react/detailWithSuggestions/dist/main.4ebf99c2f663a585a69c.js','/react/detailWithSuggestions/dist/npm.idealista.7b934429df3db6bfe2f1.js','/react/detailWithSuggestions/dist/runtime.566c443cd250c9274dff.js'
+    ];
+
+    var baseURI = ('config' in window) ? window.config.staticsBaseUri : '';
+    var createScriptNodeByPath = function (path) {
+        var node = document.createElement('script');
+        node.src = path;
+        return node;
+    };
+
+    var createLinkNodeFromFile = function (file) {
+        var node = document.createElement('link');
+        node.rel = 'stylesheet';
+        node.type = 'text/css';
+        node.media = 'all';
+        node.href = file;
+        return node;
+    };
+
+    loadCssFile = function (file) {
+        var linkNode = createLinkNodeFromFile(file);
+        document.head.appendChild(linkNode);
+    };
+
+    paths.forEach(function (path) {
+        var scriptPath = baseURI + path;
+        document.body.appendChild(createScriptNodeByPath(scriptPath));
+    });
+
+    var cssFile = 'main.cb82548da2d86a607f3c.css';
+    if(cssFile) {
+        loadCssFile(baseURI + '/react/detailWithSuggestions/dist/main.cb82548da2d86a607f3c.css');
+    }
+
+    }

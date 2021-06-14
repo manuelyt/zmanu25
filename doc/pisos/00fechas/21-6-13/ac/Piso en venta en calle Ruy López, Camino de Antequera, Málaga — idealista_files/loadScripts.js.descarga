@@ -1,0 +1,39 @@
+
+    if(window.config.galleryReactToggle) {
+        
+    var paths = [
+        '/react/gallery/dist/npm..pnpm.3fed88c6bf984c2150f9.js','/react/gallery/dist/intl.8e26995256cb38bd8e26.js','/react/gallery/dist/main.cf169bbdb1e407c91048.js','/react/gallery/dist/npm.idealista.c0eca05688a28d724b5c.js','/react/gallery/dist/runtime.508774b01d8f307ce663.js'
+    ];
+
+    var baseURI = ('config' in window) ? window.config.staticsBaseUri : '';
+    var createScriptNodeByPath = function (path) {
+        var node = document.createElement('script');
+        node.src = path;
+        return node;
+    };
+
+    var createLinkNodeFromFile = function (file) {
+        var node = document.createElement('link');
+        node.rel = 'stylesheet';
+        node.type = 'text/css';
+        node.media = 'all';
+        node.href = file;
+        return node;
+    };
+
+    loadCssFile = function (file) {
+        var linkNode = createLinkNodeFromFile(file);
+        document.head.appendChild(linkNode);
+    };
+
+    paths.forEach(function (path) {
+        var scriptPath = baseURI + path;
+        document.body.appendChild(createScriptNodeByPath(scriptPath));
+    });
+
+    var cssFile = 'main.4a9c79f3dcf4b9572c82.css';
+    if(cssFile) {
+        loadCssFile(baseURI + '/react/gallery/dist/main.4a9c79f3dcf4b9572c82.css');
+    }
+
+    }

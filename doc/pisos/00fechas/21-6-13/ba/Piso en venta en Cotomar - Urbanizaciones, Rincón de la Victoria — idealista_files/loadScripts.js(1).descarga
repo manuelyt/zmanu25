@@ -1,0 +1,39 @@
+
+    if(window.adMultimediasInfo.homeStaging.length) {
+        
+    var paths = [
+        '/react/homestaging/dist/npm..pnpm.d6141c510eedb02808a3.js','/react/homestaging/dist/intl.62a903db4f3f30d6454a.js','/react/homestaging/dist/main.257cde6d3038224d65af.js','/react/homestaging/dist/npm.idealista.7f197df77ebcd2c4d714.js','/react/homestaging/dist/runtime.d98a6af0db725ea3b8ba.js'
+    ];
+
+    var baseURI = ('config' in window) ? window.config.staticsBaseUri : '';
+    var createScriptNodeByPath = function (path) {
+        var node = document.createElement('script');
+        node.src = path;
+        return node;
+    };
+
+    var createLinkNodeFromFile = function (file) {
+        var node = document.createElement('link');
+        node.rel = 'stylesheet';
+        node.type = 'text/css';
+        node.media = 'all';
+        node.href = file;
+        return node;
+    };
+
+    loadCssFile = function (file) {
+        var linkNode = createLinkNodeFromFile(file);
+        document.head.appendChild(linkNode);
+    };
+
+    paths.forEach(function (path) {
+        var scriptPath = baseURI + path;
+        document.body.appendChild(createScriptNodeByPath(scriptPath));
+    });
+
+    var cssFile = 'main.7659888b1d80e7e8c368.css';
+    if(cssFile) {
+        loadCssFile(baseURI + '/react/homestaging/dist/main.7659888b1d80e7e8c368.css');
+    }
+
+    }
