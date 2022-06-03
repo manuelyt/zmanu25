@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+me he hecho un qrcode de la wifi de llovet
+ 
+lo hice usando :
+ 
+https://qifi.org/
+ 
+cuando se entra dice que no se pudo conectar, pero en realidad si que se conecta
+lo que pasa es que tarda un poco
+pero creo que funciona
+ 
+solo hay que poner el ssid, y la contaseña
+ 
+Lowi846F-5G
+ 
+U4S73GA6DZZ7NH
+ 
+esto es lo que se genera :
+ 
+WIFI:S:<SSID>;T:<WPA|WEP|>;P:<password>;; 
+ 
+lo he puesto aqui : 
+ 
+C:\manu\git\zmanu25\doc\llovet\wifi
+
